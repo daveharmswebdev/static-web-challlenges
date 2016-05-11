@@ -20,7 +20,6 @@ var smallestNumber = function() {
 		number++;
 
 	}
-
 	return number;	
 };
 

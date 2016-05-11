@@ -19,11 +19,9 @@ function findDifference() {
 	var sumOfSquares = squares.reduce(function(a,b) {
 		return a + b;
 	});
-	var difference = sumOfSquares - arraySum;
+	var difference = (arraySum*arraySum) - sumOfSquares;
 	return difference;
 }
-
-console.log(findDifference());
 
 elSquares.innerHTML = 'The difference between the square of natural numbers 1 to 10 and the sum of those numbers squared is <strong>' + findDifference() + '</strong>';
 
